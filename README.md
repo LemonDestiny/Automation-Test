@@ -46,3 +46,15 @@ Al finalizar la ejecución en modo headless, podrás encontrar:
 Videos: En cypress/videos.
 
 Reporte HTML: En cypress/reports
+
+📮 Postman
+--
+Se incluye la colección de pruebas manuales y automatizadas en la carpeta /postman.
+
+Archivo: Petstore_Collection.json
+
+Ambiente: Petstore_Environment.json
+
+Nota: Las peticiones incluyen scripts de validación de status code y tiempos de respuesta.
+
+A través de este [Enlace](https://api.postman.com/collections/25511524-7a0cc21e-a6aa-4dbe-b33c-e88f8fe1cf98?access_key=PMAT-01KFGT267DEZK69ZC8Z9THKXJE) de Postman se puede acceder a la documentación interactiva y visualizar los casos de prueba sin necesidad de importar archivos.
