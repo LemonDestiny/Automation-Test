@@ -15,6 +15,10 @@
             "exec": [
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is less than 2000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
               "});"
             ],
             "type": "text/javascript",
@@ -36,16 +40,9 @@
           }
         },
         "url": {
-          "raw": "https://petstore.swagger.io/v2/pet",
-          "protocol": "https",
+          "raw": "{{url}}",
           "host": [
-            "petstore",
-            "swagger",
-            "io"
-          ],
-          "path": [
-            "v2",
-            "pet"
+            "{{url}}"
           ]
         }
       },
@@ -60,6 +57,10 @@
             "exec": [
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is less than 2000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
               "});"
             ],
             "type": "text/javascript",
@@ -84,16 +85,11 @@
           }
         },
         "url": {
-          "raw": "https://petstore.swagger.io/v2/pet/1522",
-          "protocol": "https",
+          "raw": "{{url}}/1522",
           "host": [
-            "petstore",
-            "swagger",
-            "io"
+            "{{url}}"
           ],
           "path": [
-            "v2",
-            "pet",
             "1522"
           ]
         }
@@ -109,6 +105,10 @@
             "exec": [
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is less than 2000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
               "});"
             ],
             "type": "text/javascript",
@@ -130,17 +130,9 @@
           }
         },
         "url": {
-          "raw": "https://petstore.swagger.io/v2/pet/",
-          "protocol": "https",
+          "raw": "{{url}}",
           "host": [
-            "petstore",
-            "swagger",
-            "io"
-          ],
-          "path": [
-            "v2",
-            "pet",
-            ""
+            "{{url}}"
           ]
         }
       },
